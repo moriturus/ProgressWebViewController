@@ -15,6 +15,7 @@ public enum BarButtonItemType {
     case stop
     case activity
     case done
+    case cross
     case flexibleSpace
 }
 

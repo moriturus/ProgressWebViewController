@@ -110,6 +110,10 @@ open class ProgressWebViewController: UIViewController {
         return UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneDidClick(sender:)))
     }()
     
+    lazy fileprivate var crossBarButtonItem: UIBarButtonItem = {
+        return UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(doneDidClick(sender:)))
+    }()
+    
     lazy fileprivate var flexibleSpaceBarButtonItem: UIBarButtonItem = {
         return UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     }()
@@ -344,6 +348,7 @@ fileprivate extension ProgressWebViewController {
             .stop: stopBarButtonItem,
             .activity: activityBarButtonItem,
             .done: doneBarButtonItem,
+            .cross: crossBarButtonItem,
             .flexibleSpace: flexibleSpaceBarButtonItem
         ]
         
