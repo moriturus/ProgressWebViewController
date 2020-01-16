@@ -73,7 +73,7 @@ open class ProgressWebViewController: UIViewController {
     open var rightNavigaionBarItemTypes: [BarButtonItemType] = []
     open var toolbarItemTypes: [BarButtonItemType] = [.back, .forward, .reload, .activity]
     
-    fileprivate var webView: WKWebView?
+    open var webView: WKWebView?
     fileprivate var progressView: UIProgressView?
     fileprivate var refreshControl: UIRefreshControl?
     
